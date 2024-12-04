@@ -1,65 +1,67 @@
 site_name: Zsh 中文手册
-site_author: '夜坂雅'
-site_url: 'https://shadowrz.github.io/zshdocs-zh/'
-docs_dir: 'content'
+site_author: "夜坂雅"
+site_url: "https://shadowrz.github.io/zshdocs-zh/"
+docs_dir: "content"
 repo_url: https://github.com/ShadowRZ/zshdocs-zh
-repo_name: 'ShadowRZ/zshdocs-zh'
-copyright: '2020-2022 夜坂雅及<a href="https://github.com/ShadowRZ/zshdocs-zh/graphs/contributors">其他贡献者</a>'
+repo_name: "ShadowRZ/zshdocs-zh"
+copyright: '2020-2022 夜坂雅及<a href="https://github.com/ShadowRZ/zshdocs-zh/graphs/contributors">其他贡献者</a>, 2024 Allan Downey'
 extra_css:
-    - stylesheets/extra.css
+  - stylesheets/extra.css
 
 theme:
-    language: 'zh'
-    name: 'material'
-    palette:
-        - scheme: default
-          media: "(prefers-color-scheme: light)"
-          primary: 'deep orange'
-          accent: 'blue'
-          toggle:
-              icon: material/lightbulb-outline
-          name: 切换为暗色模式
-        - scheme: slate
-          media: "(prefers-color-scheme: dark)"
-          primary: 'deep orange'
-          accent: 'blue'
-          toggle:
-              icon: material/lightbulb
-          name: 切换为亮色模式
-    icon:
-        repo: 'fontawesome/brands/github-alt'
-        logo: 'fontawesome/solid/terminal'
-    features:
-        - toc.integrate
+  language: "zh"
+  name: "material"
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: "deep orange"
+      accent: "blue"
+      toggle:
+        icon: material/lightbulb-outline
+      name: 切换为暗色模式
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      primary: "indigo"
+      accent: "blue"
+      toggle:
+        icon: material/lightbulb
+      name: 切换为亮色模式
+  icon:
+    repo: "fontawesome/brands/github-alt"
+    logo: "fontawesome/solid/terminal"
+  features:
+    - toc.integrate
+    - navigation.top
+    - navigation.footer
 plugins:
-    - search
-    - git-revision-date-localized:
-        type: iso_datetime
-    - minify:
-        minify_html: true
+  - search
+  - git-revision-date-localized:
+      type: iso_datetime
+  - minify:
+      minify_html: true
 markdown_extensions:
-    - toc:
-        permalink: true
-    - codehilite:
-        guess_lang: false
-    - admonition
-    - footnotes
-    - pymdownx.betterem:
-        smart_enable: all
-    - pymdownx.caret
-    - pymdownx.critic
-    - pymdownx.details
-    - pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
-    - pymdownx.keys
-    - pymdownx.highlight
-    - pymdownx.superfences
-    - pymdownx.inlinehilite
-    - pymdownx.magiclink
-    - pymdownx.smartsymbols
-    - pymdownx.tasklist:
-        custom_checkbox: true
-    - pymdownx.tilde
-    - pymdownx.escapeall
-    - markdown.extensions.def_list
+  - toc:
+      permalink: true
+  - codehilite:
+      guess_lang: false
+  - admonition
+  - footnotes
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.escapeall
+  - markdown.extensions.def_list
