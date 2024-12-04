@@ -5,13 +5,13 @@
 Shell 被执行时会识别以下参数确定 Shell 从哪里读取指令：
 
 `-c`
-:   取第一个参数作为执行的命令，而非从脚本或标准输入读取命令。若其后给了任何参数，第一个被赋值 `$0`，而非作为位置参数使用。
+: 取第一个参数作为执行的命令，而非从脚本或标准输入读取命令。若其后给了任何参数，第一个被赋值 `$0`，而非作为位置参数使用。
 
 `-i`
-:   强制交互 Shell，仍可以指定执行的脚本。
+: 强制交互 Shell，仍可以指定执行的脚本。
 
 `-s`
-:   强制 Shell 从标准输入读取命令。若未给 `-s` 参数且传入一个参数，第一参数作为要执行的脚本的路径。
+: 强制 Shell 从标准输入读取命令。若未给 `-s` 参数且传入一个参数，第一参数作为要执行的脚本的路径。
 
 若选项处理后仍有剩余参数，且 `-c` 和 `-s` 都未指定，第一参数作为包含 Shell 命令的脚本文件名。如设置选项 `PATH_SCRIPT`，且文件名不含目录路径（即名字中没有 `/`），先按当前目录后按变量 `PATH` 中指定的命令路径搜索脚本。如未设该选项或名字中包含 `/` 它会被直接使用。
 
@@ -41,7 +41,7 @@ zsh -x -o shwordsplit scr
 
 当 Zsh 被以 `sh` 或 `ksh` 运行时，会相应模拟 _sh_ 或 _ksh_；更准确说，它首先查看它被启动时的名字里的第一个字符，除去任何开头的 `r`（假定表示“限制 Shell”），如果是 `b`，`s` 或 `k` 会模拟 _sh_ 或 _ksh_。并且，若以 `su` 执行（某些系统当 Shell 被 su 执行时会这样），Shell 会试图从 `SHELL` 环境变量中取备选名字并基于此执行模拟。
 
-在 _sh_ 和 _ksh_ 兼容模式下以下参数失去特殊性且 Shell 不载入：`ARGC`，`argv`，`cdpath`，`fignore`，`fpath`，`HISTCHARS`，`mailpath`，`MANPATH`，`manpath`，`path`，`prompt`，`PROMPT`，`PROMPT2`，`PROMPT3`，`PROMPT4`，`psvar`，`status`，`watch`。 
+在 _sh_ 和 _ksh_ 兼容模式下以下参数失去特殊性且 Shell 不载入：`ARGC`，`argv`，`cdpath`，`fignore`，`fpath`，`HISTCHARS`，`mailpath`，`MANPATH`，`manpath`，`path`，`prompt`，`PROMPT`，`PROMPT2`，`PROMPT3`，`PROMPT4`，`psvar`，`status`，`watch`。
 
 通常的 Zsh 启动/退出脚本不会被执行。登录 Shell 读取 `/etc/profile` 而后是 `$HOME/.profile`。若执行时设置 `ENV` 环境变量，读取登录脚本后读取 `$ENV`。`ENV` 的值会在解析为路径名时受到参数展开，命令替换，和算术展开。注意 `PRIVILEGED` 选项也会影响启动文件的执行。
 

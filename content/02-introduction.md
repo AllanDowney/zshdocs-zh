@@ -13,7 +13,7 @@ Zsh 最初由 Paul Falstad `<pf@zsh.org>` 编写。Zsh 现由 zsh-workers 邮件
 Zsh 可从以下 HTTP 和匿名 FTP 站下载。
 
 ftp://ftp.zsh.org/pub/  
-https://www.zsh.org/pub/  
+https://www.zsh.org/pub/
 
 最新源码可通过 Sourceforge Git 获取。详情见 [https://sourceforge.net/projects/zsh/](https://sourceforge.net/projects/zsh/)。对此归档的操作概要可在 http://zsh.sourceforge.net/ 找到。
 
@@ -22,13 +22,13 @@ https://www.zsh.org/pub/
 Zsh 有三个邮件列表：
 
 `<zsh-announce@zsh.org>`
-:   发行宣告，Shell 大变更以及月更的 Zsh FAQ。（审核）
+: 发行宣告，Shell 大变更以及月更的 Zsh FAQ。（审核）
 
 `<zsh-users@zsh.org>`
-:   用户讨论。
+: 用户讨论。
 
 `<zsh-workers@zsh.org>`
-:   调教，开发，Bug 报告和补丁。
+: 调教，开发，Bug 报告和补丁。
 
 如要订阅或退订，向邮件列表相应的管理地址发邮件。
 
@@ -48,7 +48,7 @@ Zsh 有三个邮件列表：
 
 ## Zsh FAQ
 
-Zsh 有一份由 Peter Stephenson `<pws@zsh.org>` 常见问题列表（FAQ）。它经常被发到 _comp.unix.shell_ 和 _zsh-announce_ 邮件列表。最新版可在任何 Zsh FTP 站或 http://www.zsh.org/FAQ/ 找到。与 FAQ 有关的事务的联系地址是 `<faqmaster@zsh.org>`。
+Zsh 有一份由 Peter Stephenson `<pws@zsh.org>` 常见问题列表（FAQ）。它经常被发到 _comp.unix.shell_ 和 _zsh-announce_ 邮件列表。最新版可在任何 Zsh FTP 站或 http://www.zsh.org/FAQ/ 找到。与 FAQ 有关的事务的联系地址是  `<faqmaster@zsh.org>`。
 
 ## Zsh 网页
 

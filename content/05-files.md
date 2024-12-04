@@ -19,7 +19,7 @@
 `$ZDOTDIR/.zshrc`  
 `$ZDOTDIR/.zlogin`  
 `$ZDOTDIR/.zlogout`  
-`${TMPPREFIX}*` （默认 /tmp/zsh*）  
+`${TMPPREFIX}*` （默认 /tmp/zsh\*）  
 `/etc/zshenv`  
 `/etc/zprofile`  
 `/etc/zshrc`  
