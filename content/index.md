@@ -21,7 +21,7 @@ Permission is granted to copy and distribute translations of this manual into an
 - [x] 5 Files
 - [x] 6 Shell Grammar
 - [x] 7 Redirection
-- [ ] 8 Command Execution
+- [x] 8 Command Execution
 - [ ] 9 Functions
 - [ ] 10 Jobs & Signals
 - [ ] 11 Arithmetic Evaluation
